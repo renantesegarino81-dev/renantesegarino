@@ -1,0 +1,59 @@
+
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#4fd1c5;
+  --text:#e6eef6;
+  --radius:10px;
+  --container:1100px;
+}
+.hidden { display: none; }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;
+  background:linear-gradient(180deg,var(--bg),#07101a);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--container);margin:0 auto;padding:1rem}
+.site-header{background:transparent;padding:1rem 0}
+.site-header .container{display:flex;align-items:center;gap:1rem}
+.brand{font-weight:700;color:var(--text);text-decoration:none}
+#nav-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);padding:.4rem .6rem;border-radius:6px}
+.site-nav{margin-left:auto;display:flex;gap:1rem}
+.site-nav a{color:var(--muted);text-decoration:none}
+.hero{padding:4rem 0;text-align:center;background: radial-gradient(circle at 15% 25%, white 1px, transparent 1px), radial-gradient(circle at 45% 55%, white 1px, transparent 1px), radial-gradient(circle at 75% 35%, white 1px, transparent 1px), radial-gradient(circle at 25% 75%, white 1px, transparent 1px), radial-gradient(circle at 65% 15%, white 1px, transparent 1px), black;}
+.profile-pic{width:200px;height:200px;border-radius:50%;object-fit:cover;margin-bottom:1rem}
+.hero h1{font-size:2rem;margin:.2rem 0}
+.hero p{color:var(--muted);margin:.6rem 0}
+.cta{display:inline-block;background:var(--accent);color:#032029;padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+.projects{padding:2rem 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:1rem;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.03)}
+.card h3{margin:.2rem 0}
+.about{padding:2rem 0}
+.resume{padding:2rem 0}
+.resume-content{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.resume-section{margin-bottom:1.5rem}
+.resume-section h3{margin:.2rem 0 .5rem 0;color:var(--accent)}
+.resume-section ul{margin:0;padding-left:1rem}
+.resume-section li{margin:.2rem 0}
+.contact{padding:2rem 0}
+.contact form{display:grid;gap:.6rem;max-width:560px}
+.contact input,.contact textarea{padding:.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:#071425;color:var(--text)}
+.contact button{padding:.6rem 1rem;border-radius:8px;border:none;background:var(--accent);color:#032029;font-weight:600}
+.site-footer{padding:2rem 0;color:var(--muted);text-align: center;}
+@media (max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .resume-content{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  #nav-toggle{display:block}
+  .site-nav{position:absolute;right:1rem;top:64px;background:#071220;padding:1rem;border-radius:8px;display:none;flex-direction:column}
+  .site-nav.show{display:flex}
+  .grid{grid-template-columns:1fr}
+  .hero h1{font-size:1.6rem}
+}
