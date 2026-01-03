@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#"></a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav">
+        
+        <a href="#about" class="hidden">About</a>
+        <a href="#resume" class="hidden">Resume</a>
+        <a href="#contact" class="hidden">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <img src="JEJE.jpg" alt="Profile Picture" class="profile-pic">
+        
+        <h1>Hello — I'm RENANTE SEGARINO</h1>
+        <p>Ict programmer student</p>
+           <p><a class="cta" href="#resume">See my info</a></p>
+      </div>
+    </section>
+
+   
+    <section id="about" class="container about hidden">
+      <button id="back-home" class="cta">Back to Home</button>
+      <h2>About Me</h2> 
+      <p>Hello! I am Renante A Segarino Jr Senior High School student currently taking the Information and Communications Technology (ICT) – Programming strand. I have a strong interest in coding, web development, and technology, and I enjoy learning how to create websites and simple applications.
+
+As an ICT student, I have gained basic knowledge in programming concepts, web design, and computer systems. I continue to practice and improve my skills in problem-solving, logical thinking, and software development.
+
+I am passionate about technology and eager to explore more in the field of programming.</p>
+    </section>
+
+     <section id="resume" class="container resume hidden">
+      <h2>Resume</h2>
+      <div class="resume-content">
+        <div class="resume-section">
+          <h3>Education</h3>
+          <p>Senior High School - Information and Communications Technology (ICT) – Programming strand</p>
+          <p>Expected Graduation: 2026</p>
+        </div>
+        <div class="resume-section">
+          <h3>Skills</h3>
+          <ul>
+            <li>Programming: HTML, CSS, JavaScript</li>
+            <li>Web Development Basics</li>
+            <li>Problem Solving</li>
+            <li>Logical Thinking</li>
+          </ul>
+        </div>
+        <div class="resume-section">
+          <h3>Experience</h3>
+          <p>Currently building personal projects and learning through school curriculum.</p>
+        </div>
+        <div class="resume-section">
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact hidden">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p>Or email me at <a href="mailto:renantejr911@gmail.com">renantejr911@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer hidden">
+    <div class="container">
+      
+      <small>&copy; renante portfolio</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
